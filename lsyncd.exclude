@@ -1,0 +1,10 @@
+*/autocache/
+*/logs/
+*/awstats/
+*/rsscache/
+*/cache/
+*/dbcache/
+*/data/
+*/gt-cache/
+*/glc_cache/
+*/pgcache/
