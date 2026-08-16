@@ -9,7 +9,7 @@
 
 # lsyncd (ftmon config)
 
-Lua config to keep two web servers in sync from a master. Assumes [tuxlite](https://github.com/minsunw/tuxlite) and [lsyncd](https://github.com/lsyncd/lsyncd) `default.rsyncssh`.
+Lua config to keep two web servers in sync from a master. Assumes a tuxlite LAMP layout and [lsyncd](https://github.com/lsyncd/lsyncd) `default.rsyncssh`.
 
 `lsyncd.conf.lua` defines `synccloud(host, user, port)`: watch `/home/<user>/domains` and rsync it to the same path on the peer over ssh (port 2222 in the example). `lsyncd.exclude` skips cache and log dirs so those stay local. The `synccloud(...)` calls are commented; uncomment one pair per vhost user (`blogswww`, `forumswww`, `drupalwww`) per slave (`ds2`, `ds3`).
 
